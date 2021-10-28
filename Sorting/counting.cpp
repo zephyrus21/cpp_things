@@ -13,7 +13,7 @@ $ Counting Sort Algorithim implementation in Array.
 ? This is not a prefferd sorting algorithim for large data sets.
 
 @author [Piyush Pandey](https://github.com/zephyrus21)
- */
+*/
 
 #include <bits/stdc++.h>
 

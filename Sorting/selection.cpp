@@ -11,7 +11,7 @@ $ Selection Sort Algorithim implementation in Array.
 * Space Complexity: O(1)
 
 @author [Piyush Pandey](https://github.com/zephyrus21)
- */
+*/
 
 #include <bits/stdc++.h>
 
