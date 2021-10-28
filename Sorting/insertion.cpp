@@ -4,8 +4,8 @@
 $ Insertion Sort Algorithim implementation in Array.
 
 * Time Complexity:
-# Best Case: O(n)
-# Average Case: O(n^2)
+# Best Case: Ω(n)
+# Average Case: Θ(n^2)
 # Worst Case: O(n^2)
 
 * Space Complexity: O(1)
