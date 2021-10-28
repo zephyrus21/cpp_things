@@ -1,6 +1,8 @@
 /* 
 !-----SELECTION SORT-----!
 
+$ Selection Sort Algorithim implementation in Array.
+
 * Time Complexity:
 # Best Case: O(n^2)
 # Average Case: O(n^2)
@@ -8,6 +10,7 @@
 
 *Space Complexity: O(1)
 
+@author [Piyush Pandey](https://github.com/zephyrus21)
  */
 
 #include <bits/stdc++.h>
@@ -37,4 +40,5 @@ int main() {
   for (int i = 0; i < 5; i++) {
     cout << arr[i] << " ";
   }
+  return 0;
 }
