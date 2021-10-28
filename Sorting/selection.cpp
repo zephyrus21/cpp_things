@@ -19,9 +19,9 @@ using namespace std;
 
 void selection_sort(int arr[], int n) {
   for (int i = 0; i < n - 1; i++) {
-    int min_idx = i; //? this will store the index of minimum element
+    int min_idx = i; //& this will store the index of minimum element
     for (int j = i + 1; j < n; j++)
-      if (arr[j] < arr[min_idx]) //? if current element is less than the minimum element then update the minimum element index
+      if (arr[j] < arr[min_idx]) //& if current element is less than the minimum element then update the minimum element index
         min_idx = j;
     int temp = arr[i];
     arr[i] = arr[min_idx];
