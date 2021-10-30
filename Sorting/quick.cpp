@@ -37,18 +37,16 @@ int partition(int arr[], int start, int end) {
 
 void quickSort(int arr[], int start, int end) {
   if (start < end) {
-    int pi = partition(arr, start, end);
+    int pi = partition(arr, start, end); //& arr[pi] is the pivot | this function will return the pivot index
     quickSort(arr, start, pi - 1);
     quickSort(arr, pi + 1, end);
   }
 }
 
 int main() {
-
   int arr[] = {10, 7, 8, 9, 1, 5};
   quickSort(arr, 0, 5);
-  for (int i = 0; i < 5; i++) {
+  for (int i = 0; i < 5; i++)
     cout << arr[i] << " ";
-  }
   return 0;
 }

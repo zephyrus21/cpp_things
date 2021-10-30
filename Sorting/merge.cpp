@@ -58,12 +58,12 @@ void merge(int arr[], int l, int m, int r) {
 }
 
 void merge_sort(int arr[], int l, int r) {
-  if (l == r)
-    return;
-  int m = l + (r - l) / 2;
-  merge_sort(arr, l, m);
-  merge_sort(arr, m + 1, r);
-  merge(arr, l, m, r);
+  if (l < r) {
+    int m = l + (r - l) / 2;
+    merge_sort(arr, l, m);
+    merge_sort(arr, m + 1, r);
+    merge(arr, l, m, r);
+  }
 }
 
 int main() {
