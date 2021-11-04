@@ -1,23 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Node
-{
+struct Node {
   int data;
   struct Node *next;
 };
 
-void display(struct Node *ptr)
-{
-  while (ptr != NULL)
-  {
+void display(struct Node *ptr) {
+  while (ptr != NULL) {
     printf("Data- %d\n", ptr->data);
     ptr = ptr->next;
   }
 }
 
-void push(struct Node **head, int data)
-{
+void push(struct Node **head, int data) {
   struct Node *ptr = (struct Node *)malloc(sizeof(struct Node));
 
   ptr->data = data;
@@ -25,13 +21,11 @@ void push(struct Node **head, int data)
   *head = ptr;
 }
 
-void delete_linked_list(struct Node **head)
-{
+void delete_linked_list(struct Node **head) {
   struct Node *p = *head;
   struct Node *q;
 
-  while (p != NULL)
-  {
+  while (p != NULL) {
     q = p->next;
     free(p);
     p = q;
@@ -40,8 +34,7 @@ void delete_linked_list(struct Node **head)
   *head = NULL;
 }
 
-int main()
-{
+int main() {
   struct Node *head = NULL;
 
   push(&head, 1);

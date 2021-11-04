@@ -1,19 +1,16 @@
 #include <stdio.h>
 
-int linear_search(int arr[], int size, int element)
-{
+int linear_search(int arr[], int size, int element) {
   for (int i = 0; i < size; i++)
     if (arr[i] == element)
       return i;
   return -1;
 }
 
-int binary_search(int arr[], int size, int element)
-{
+int binary_search(int arr[], int size, int element) {
   int low = 0, mid = 0, high = size - 1;
 
-  while (low <= high)
-  {
+  while (low <= high) {
     mid = (low + high) / 2;
     if (arr[mid] == element)
       return mid;
@@ -25,8 +22,7 @@ int binary_search(int arr[], int size, int element)
   return -1;
 }
 
-int main()
-{
+int main() {
   int arr[] = {0, 3, 9, 26, 294, 1879};
   int size = sizeof(arr) / sizeof(int);
 
