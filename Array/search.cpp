@@ -1,4 +1,6 @@
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 int linear_search(int arr[], int size, int element) {
   for (int i = 0; i < size; i++)
@@ -27,10 +29,10 @@ int main() {
   int size = sizeof(arr) / sizeof(int);
 
   int index1 = linear_search(arr, size, 294);
-  printf("%d", index1);
+  cout << index1 << " ";
 
-  int index2 = binary_search(arr, size, 294);
-  printf("%d", index2);
+  int index2 = binary_search(arr, size, 26);
+  cout << index2 << " ";
 
   return 0;
 }
