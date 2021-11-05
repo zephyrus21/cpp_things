@@ -26,14 +26,14 @@ class Queue {
 };
 
 void Queue::enqueue(int data) {
-  if (rear == size - 1) {
+  if ((rear + 1) % size == front) {
     cout << "Queue is full" << endl;
     return;
   }
   if (front == -1) {
     front = 0;
   }
-  rear++;
+  rear = (rear + 1) % size;
   arr[rear] = data;
 }
 
@@ -43,17 +43,21 @@ int Queue::dqueue() {
     return -1;
   }
   int x = arr[front];
-  front++;
+  front = (front + 1) % size;
   return x;
 }
 
 void Queue::display() {
+  int i = front;
   if (front == -1) {
     cout << "Queue is empty" << endl;
     return;
   }
-  for (int i = front; i <= rear; i++)
+  do {
     cout << arr[i] << " ";
+    i = (i + 1) % size;
+  } while (i != (rear + 1) % size);
+
   cout << endl;
 }
 
