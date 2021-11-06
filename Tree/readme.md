@@ -34,7 +34,7 @@
 
 ----
 
-## Height and Nodes
+## Binary Tree
 
 ### Height given
 
@@ -58,4 +58,32 @@
 
 ### Relation between internal node and external node
 
-$deg(0) = deg(2) + 1$
+> $deg(0) = deg(2) + 1$
+
+----v
+
+## Strict Binary Tree
+
+### Height given (SBT)
+
+- Formula to find minimum numbers of nodes in a given height h of a Strict Binary Tree
+
+> $n = 2h + 1$
+
+- Formula to find maximum numbers of nodes in a given height h of a Strict Binary Tree
+
+> $n =$ $2^{h+1} - 1$
+
+### Nodes given (SBT)
+
+- Formula to find minimum height in a given no of nodes in a Strict Binary Tree
+
+> $h = log_2(n+1) - 1$
+
+- Formula to find maximum height in a given no of nodes in a Strict Binary Tree
+
+> $h = (n - 1) / 2$
+
+### Relation between internal node and external node (SBT)
+
+> $e = i + 1$ (e - external node, i - internal node)
