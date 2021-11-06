@@ -2,7 +2,7 @@
 
 ## Number of Binary Trees
 
-### Unlablled Nodes
+### Unlabelled Nodes
 
 - Formula to find the number of different Binary Trees can be generated for N number of Nodes (Catalan Number).
 
