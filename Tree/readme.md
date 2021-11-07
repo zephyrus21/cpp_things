@@ -1,6 +1,6 @@
 # Tree
 
-## Number of Binary Trees
+## Binary Tree
 
 ### Unlabelled Nodes
 
@@ -34,8 +34,6 @@
 
 ----
 
-## Binary Tree
-
 ### Height given
 
 - Formula to find minimum numbers of nodes in a given height h of a Binary Tree
@@ -60,7 +58,7 @@
 
 > $deg(0) = deg(2) + 1$
 
-----v
+----
 
 ## Strict Binary Tree
 
@@ -87,3 +85,42 @@
 ### Relation between internal node and external node (SBT)
 
 > $e = i + 1$ (e - external node, i - internal node)
+
+----
+
+## m-Ary Tree
+
+Tree with maximum of m no. of children nodes.
+
+Example:
+
+- 3-Ary Tree can have {0, 1, 2, 3} either no of node children.
+- 4-Ary Tree can have {0, 1, 2, 3, 4} either no of node children.
+
+## Strict m-Ary Tree
+
+### Height given (SmAT)
+
+- Formula to find minimum numbers of nodes in a given height h of a Strict m-Ary Tree
+
+> $n = mh + 1$
+
+- Formula to find maximum numbers of nodes in a given height h of a Strict m-Ary Tree
+
+> $n =$ $(m^{h+1}-1)/m-1$
+
+### Nodes given (SmAT)
+
+- Formula to find minimum height of Strict m-Ary Tree
+
+> $h =$ $log_m[n(m-1)+1] -1$
+
+- Formula to find maximum height of Strict m-Ary Tree
+
+> $h = (n - 1) / m$
+
+### Relation between internal node and external node (SmAT)
+
+> $e = (m-1)i + 1$ (e - external node, i - internal node)
+
+----
