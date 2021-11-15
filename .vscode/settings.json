@@ -1,6 +1,9 @@
 {
   "C_Cpp.errorSquiggles": "Disabled",
   "files.associations": {
-    "cstdio": "c"
+    "*.js": "javascript",
+    "cstdio": "c",
+    "array": "c",
+    "string": "c"
   }
 }
