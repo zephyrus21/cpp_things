@@ -2,17 +2,16 @@
   "tasks": [
     {
       "type": "cppbuild",
-      "label": "C/C++: clang++ build active file",
-      "command": "/usr/bin/clang++",
+      "label": "C/C++: g++.exe build active file",
+      "command": "C:\\MinGW\\bin\\g++.exe",
       "args": [
-        "-fdiagnostics-color=always",
         "-g",
         "${file}",
         "-o",
-        "${fileDirname}/${fileBasenameNoExtension}"
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],
       "options": {
-        "cwd": "${fileDirname}"
+        "cwd": "C:\\MinGW\\bin"
       },
       "problemMatcher": [
         "$gcc"
